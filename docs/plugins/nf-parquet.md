@@ -41,3 +41,5 @@ workflow {
 While nf-parquet is designed for general-purpose high-performance data handling, you might have specific requirements regarding complex nested schemas or integration with private S3-compatible storage.
 
 If you need help optimizing your data architecture or require a specialized version of this plugin for your production environment, we are here to help.
+
+<Chat/>

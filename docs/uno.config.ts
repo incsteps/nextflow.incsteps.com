@@ -23,4 +23,16 @@ export default defineConfig({
       include: ['./**/*.vue', './**/*.md'],
     },
   },
+  theme: {
+    colors: {
+      // Definimos la paleta oficial de Nextflow
+      nextflow: {
+        50: '#e6f6f4',
+        100: '#ccece8',
+        400: '#00c9a7', // Light
+        500: '#00a58b', // Brand / Main
+        600: '#00826d', // Dark
+      },
+    },
+  },
 })

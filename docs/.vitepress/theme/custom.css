@@ -1,0 +1,6 @@
+:root {
+  /* Mapeamos las variables de VitePress a los valores de nuestra paleta */
+  --vp-c-brand-1: #00a58b;      /* nextflow-500 */
+  --vp-c-brand-1-light: #00c9a7; /* nextflow-400 */
+  --vp-c-brand-1-dark: #00826d;  /* nextflow-600 */
+}

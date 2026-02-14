@@ -1,9 +1,11 @@
 import Unocss from 'unocss/vite'
 import { defineConfig } from 'vitepress'
+import { plugins } from './nfplugins'
 
 export default defineConfig({
   base: '/',
   description: 'Incremental Steps and Nextflow.',
+  ignoreDeadLinks: 'localhostLinks',
   markdown: {
     headers: {
       level: [0, 0],
@@ -27,7 +29,7 @@ export default defineConfig({
     nav: nav(),
     sidebar: {
       '/intro/': sidebarGuide(),
-      //'/plugins/': sidebarPlugins(),
+      '/plugins/': sidebarGuide(),
     },
     blog: {
       title: 'Blog',
@@ -53,29 +55,38 @@ export default defineConfig({
         Cal.ns.incsteps("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
       `,
     ],
+    [
+      'script',
+      {},
+      `
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//stats.incsteps.com/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '1']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      `,
+    ],
   ],
 })
 
 function nav() {
   return [
     { text: 'Intro', link: '/intro/', activeMatch: '/intro/' },
-    { text: 'DevOps', link: '/plugins/', activeMatch: '/plugins/' },
+    { text: 'DevOps', link: '/devops/', activeMatch: '/devops/' },
     {
       text: 'Plugins',
-      items: [
-        {
-          text: 'IBM Aspera',
-          link: '/plugins/nf-aspera',
-        },
-        {
-          text: 'Parquet',
-          link: '/plugins/nf-parquet',
-        },
-        {
-          text: 'CsvExt',
-          link: '/plugins/nf-csvext',
-        },
-      ],
+      items: plugins.map((item) => {
+        return {
+          text: item.title,
+          link: item.link,
+        }
+      }),
     },
     { text: 'Blog', link: '/blog/', activeMatch: '/blog/' },
     {
@@ -91,11 +102,22 @@ function nav() {
 }
 
 function sidebarGuide() {
+  const sidePlugins = plugins.map((plugin) => {
+    return {
+      text: plugin.title,
+      link: plugin.link,
+    }
+  })
   return [
     {
       text: 'Introduction',
+      link: '/intro/',
+      collapsible: false,
+    },
+    {
+      text: 'Plugins',
       collapsible: true,
+      items: sidePlugins,
     },
   ]
 }
-

@@ -1,4 +1,9 @@
-# High-Performance Columnar Data for Nextflow
+---
+title: nf-parquet
+description: High-Performance Columnar Data for Nextflow.
+---
+
+# nf-parquet
 
 The nf-parquet plugin brings native support for Apache Parquet to the Nextflow ecosystem. As datasets grow in size and complexity, traditional text-based formats like CSV or TSV become bottlenecks. This plugin allows your pipelines to read and write Parquet files seamlessly, unlocking faster processing and significantly lower storage costs.
 

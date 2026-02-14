@@ -1,5 +1,5 @@
 ---
-date: 2025-09-26
+date: 2025-09-27
 title: Writing (and publishing) a Nextflow Plugin II
 category: Plugins
 tags: plugins, groovy
@@ -7,8 +7,9 @@ author: Jorge Aguilera
 ---
 
 Welcome to this comprehensive four-part series on developing and publishing your own Nextflow plugins!
-
 ---
+
+<PostDetail>
 
 Nextflow plugins allow you to extend the core functionality of Nextflow, making your pipelines more powerful,
 flexible, and integrated with external systems. Whether you're looking to add custom executors, integrate cloud services,
@@ -274,3 +275,5 @@ Launching `test.nf` [extravagant_linnaeus] DSL2 - revision: 7e8c5f63b0
 
 The conversation begins with a "hi" and describes itself as a simple sentence generated on Sun Sep 28 11:11:09 CEST 2025. It concludes by requesting a "hi" back, advising the recipient not to be shy.
 ```
+
+</PostDetail>

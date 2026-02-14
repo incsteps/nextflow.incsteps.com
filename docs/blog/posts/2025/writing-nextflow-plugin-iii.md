@@ -1,5 +1,5 @@
 ---
-date: 2025-09-26
+date: 2025-09-28
 title: Writing (and publishing) a Nextflow Plugin III
 category: Plugins
 tags: plugins, groovy
@@ -7,6 +7,9 @@ author: Jorge Aguilera
 ---
 
 Welcome to this comprehensive four-part series on developing and publishing your own Nextflow plugins!
+---
+
+<PostDetail>
 
 Nextflow plugins allow you to extend the core functionality of Nextflow, making your pipelines more powerful,
 flexible, and integrated with external systems. Whether you're looking to add custom executors, integrate cloud services,
@@ -18,8 +21,6 @@ Use the links below to easily navigate the entire series:
 - Part 2: Adding Configuration to Your Nextflow Plugin link:writing-nextflow-plugin-ii.adoc[]
 - Part 3: Testing Nextflow Plugins with Spock (You Are Here)
 - Part 4: Publishing Documentation and Generating a GitHub Release link:writing-nextflow-plugin-iv.adoc[]
-
----
 
 Robust testing is key to reliability. Here, you'll learn how to leverage the powerful Spock Framework to write
 effective unit and integration tests for your Nextflow plugin components.
@@ -136,3 +137,4 @@ As our pipeline only returns a row (and them the pipeline ends) we can validate 
 
 You can/must create more test and validate as many situations as you can, simply create more "def should" methods
 
+</PostDetail>

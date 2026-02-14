@@ -1,24 +1,7 @@
 <script setup lang="ts">
-const plugins = [
-  {
-    title: 'nf-aspera',
-    details: 'High-speed data transfer integration for moving large-scale genomic datasets.',
-    link: '/plugins/nf-aspera',
-    status: 'New',
-  },
-  {
-    title: 'nf-parquet',
-    details: 'Optimized storage patterns to bridge legacy formats with modern big data analytics.',
-    link: '/plugins/nf-parquet',
-    status: 'Stable',
-  },
-  {
-    title: 'nf-csvext',
-    details: 'Advanced CSV parsing and metadata validation for Nextflow pipelines.',
-    link: '/plugins/nf-csvext',
-    status: 'Stable',
-  },
-]
+import usePlugins from '../../composables/useNfPlugins'
+
+const { allPlugins: plugins } = usePlugins()
 </script>
 
 <template>

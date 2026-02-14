@@ -1,5 +1,5 @@
 ---
-date: 2025-09-26
+date: 2025-09-29
 title: Writing (and publishing) a Nextflow Plugin IV
 category: Plugins
 tags: plugins, groovy
@@ -7,6 +7,10 @@ author: Jorge Aguilera
 ---
 
 Welcome to this comprehensive four-part series on developing and publishing your own Nextflow plugins!
+
+---
+
+<PostDetail>
 
 Nextflow plugins allow you to extend the core functionality of Nextflow, making your pipelines more powerful,
 flexible, and integrated with external systems. Whether you're looking to add custom executors, integrate cloud services,
@@ -18,8 +22,6 @@ Use the links below to easily navigate the entire series:
 - Part 2: Adding Configuration to Your Nextflow Plugin link:writing-nextflow-plugin-ii.adoc[]
 - Part 3: Testing Nextflow Plugins with Spock link:writing-nextflow-plugin-iii.adoc[]
 - Part 4: Publishing Documentation and Generating a GitHub Release (You Are Here)
-
----
 
 This article guides you through generating clear documentation and standardizing your release process
 using GitHub Actions and features, ensuring your work is easily discoverable and adoptable by the community.
@@ -335,3 +337,5 @@ INFO:: Also, the action will attach the artifacts to the release as future refer
 
 
 And this is all. Once the plugin is approved, it will be ready to be used by the community!!!
+
+</PostDetail>

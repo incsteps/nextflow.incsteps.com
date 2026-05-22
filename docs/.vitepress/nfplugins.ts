@@ -30,4 +30,10 @@ export const plugins = [
     link: '/plugins/nf-csvext',
     status: 'Stable',
   },
+  {
+    title: 'nf-oci',
+    details: 'Oracle Cloud (ObjectStorage) File System.',
+    link: '/plugins/nf-oci',
+    status: 'Experimental',
+  },
 ]

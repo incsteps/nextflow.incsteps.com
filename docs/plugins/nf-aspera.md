@@ -28,12 +28,19 @@ plugins {
 }
 ```
 
+Now you can use typical `file` method with `aspera` as protocol (similar to `http` or `ftp`):
+
+```shell
+println file('aspera://ena/pub/databases/ena/doc/FT_current.txt').text
+```
+
+(Note: "ena" is a public repository used by the plugin to know where to download the file)
+
+Also, you can use `Channel` operators:
+
 ```shell
 workflow {
-    // Downloading files via Aspera protocol
-    data_ch = Channel.fromAspera('/remote/path/sample_R1.fastq.gz')
-    
-    MY_PROCESS(data_ch)
+    Channel.ascp( client: 'demo', destination:'downloads/', source: 'aspera-test-dir-small/10MB.1') | view
 }
 ```
 

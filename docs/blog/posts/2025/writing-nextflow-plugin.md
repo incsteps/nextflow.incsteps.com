@@ -1,7 +1,7 @@
 ---
 date: 2025-09-26
 title: Writing (and publishing) a Nextflow Plugin
-category: Plugins
+category: Tutorial
 tags: plugins, groovy
 author: Jorge Aguilera
 ---

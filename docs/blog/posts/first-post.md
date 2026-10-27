@@ -1,7 +1,7 @@
 ---
 date: 2025-01-01
 title: Incremental Steps and Nextflow
-category: Generic
+category: Article
 tags: generic
 author: Jorge Aguilera
 ---

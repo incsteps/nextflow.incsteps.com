@@ -1,8 +1,8 @@
 ---
 date: 2026-05-22
 title: Deploying a Nomad Cluster for Dev
-category: executors, pipelines, nomad
-tags: nomad
+category: Article
+tags: nomad,executors, pipelines, nomad
 author: Jorge Aguilera
 ---
 

@@ -1,8 +1,8 @@
 ---
 date: 2024-08-30
 title: Executing Nextflow pipelines with Nomad by Hashicorp
-category: executors, pipelines, nomad
-tags: nomad
+category: Article
+tags: nomad,executors, pipelines, nomad
 author: Jorge Aguilera
 ---
 
